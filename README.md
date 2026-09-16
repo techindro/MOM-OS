@@ -1,37 +1,6 @@
 <div align="center">
 
-<svg width="110" height="110" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="50" cy="42" rx="24" ry="26" fill="#f5e6d8" />
-  <ellipse cx="50" cy="23" rx="22" ry="12" fill="#c8c8c8" />
-  <path d="M28 28 Q22 18 30 14 Q36 10 40 16" stroke="#8b1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M72 28 Q78 18 70 14 Q64 10 60 16" stroke="#8b1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M34 16 Q40 8 50 10 Q60 8 66 16" stroke="#8b1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <ellipse cx="50" cy="14" rx="10" ry="7" fill="#c8c8c8" />
-  <path d="M44 12 Q50 8 56 12" stroke="#8b1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <ellipse cx="26" cy="44" rx="4" ry="5" fill="#f0d8c8" />
-  <ellipse cx="74" cy="44" rx="4" ry="5" fill="#f0d8c8" />
-  <circle cx="26" cy="50" r="2.5" fill="#8b1a1a" />
-  <circle cx="74" cy="50" r="2.5" fill="#8b1a1a" />
-  <circle cx="41" cy="43" r="9" stroke="#1a1a1a" stroke-width="2.2" fill="rgba(200,220,255,0.15)" />
-  <circle cx="59" cy="43" r="9" stroke="#1a1a1a" stroke-width="2.2" fill="rgba(200,220,255,0.15)" />
-  <line x1="50" y1="42" x2="50" y2="44" stroke="#1a1a1a" stroke-width="1.8" />
-  <path d="M34 36 Q41 33 47 35" stroke="#7a6060" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M53 35 Q59 33 66 36" stroke="#7a6060" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M42 56 Q50 63 58 56" stroke="#8b1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M44 58 Q50 62 56 58" fill="#8b1a1a" opacity="0.6" />
-  <path d="M48 49 Q50 54 52 49" stroke="#c09080" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  <path d="M26 82 Q30 68 50 66 Q70 68 74 82 L80 100 L20 100 Z" fill="#8b1a1a" />
-  <path d="M36 68 Q50 75 64 68" stroke="#d4a017" stroke-width="1" fill="none"/>
-  <circle cx="38.43" cy="72.64" r="2.2" fill="#d4a017" />
-  <circle cx="41.00" cy="71.94" r="2.2" fill="#d4a017" />
-  <circle cx="43.84" cy="71.42" r="2.2" fill="#d4a017" />
-  <circle cx="46.87" cy="71.11" r="2.2" fill="#d4a017" />
-  <circle cx="50.00" cy="71.00" r="2.2" fill="#d4a017" />
-  <circle cx="53.13" cy="71.11" r="2.2" fill="#d4a017" />
-  <circle cx="56.16" cy="71.42" r="2.2" fill="#d4a017" />
-  <circle cx="59.00" cy="71.94" r="2.2" fill="#d4a017" />
-  <circle cx="61.57" cy="72.64" r="2.2" fill="#d4a017" />
-</svg>
+<img src="./logo.svg" width="110" height="110" alt="MOM-OS logo" />
 
 # MOM-OS
 ### Mind-Oriented Machine Operating System
