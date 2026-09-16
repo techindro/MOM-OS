@@ -1,65 +1,72 @@
+<div align="center">
+
+<img src="./logo.svg" width="110" height="110" alt="MOM-OS logo" />
+
 # MOM-OS
 ### Mind-Oriented Machine Operating System
 
-> An operating system where you describe what you want, and the system figures out which programs, files, and machines to use to do it.
+![Status](https://img.shields.io/badge/status-pre--alpha-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+![PRs](https://img.shields.io/badge/PRs-not%20yet%20open-red)
+
+</div>
 
 ---
 
-## What is this?
+## What this is
 
-MOM-OS is an early-stage project exploring what an operating system looks like when **intent**, not the process, is the primary unit the system understands.
+Most operating systems make you think in terms of programs. You want something done, so you figure out which app does it, open it, click around, move some files, close it, open the next thing. MOM-OS is an attempt to flip that: you say what you want, and something underneath figures out which programs, files, or tools are actually needed to get there.
 
-Today's OSes are built around launching programs and managing files. MOM-OS starts from a different question: what if the shell, scheduler, and file system were designed around goals instead — and an AI layer decided which programs, files, and (eventually) machines are needed to satisfy them?
+To be clear about what that means in practice — this isn't a new kernel, and it isn't a chatbot stapled onto a terminal. It's an agent layer that sits on top of a normal Linux system and takes on the job of translating "what you want" into "what needs to run."
 
-This is **not** a from-scratch kernel project (yet), and it is **not** just a chatbot bolted onto a terminal. It sits in between: a native AI/agent layer built on top of a proven kernel, with the long-term goal of rethinking core OS abstractions (process, scheduler, file system) around intent rather than replacing the kernel outright.
+## Why bother
 
-## Why
+Because that translation step — goal → sequence of clicks — doesn't actually need a human doing it every time. It's just overhead the OS pushes onto you because it only understands processes, not purposes. If that layer can be automated safely, computers get a lot less annoying to use.
 
-Modern computing still asks humans to translate their goals into a sequence of app launches, clicks, and file operations. MOM-OS's premise: that translation layer should be the OS's job, not the user's.
+## What's actually being built right now
 
-## Current Scope (v0)
+This is early. Like, "sketching the idea on paper" early. The plan for v0:
 
-This project is in the **vision / early architecture stage**. Nothing here is production-ready. The initial scope is intentionally narrow:
+- [ ] Figure out what an "intent" even looks like as a data structure the OS can act on
+- [ ] Build a small agent daemon on top of regular Linux (no custom kernel)
+- [ ] A permission model so the agent can't just do whatever it wants unsupervised
+- [ ] A bare-bones shell/UI to actually talk to it
+- [ ] Keep inference local by default — no forced cloud dependency
 
-- [ ] Define the "intent" abstraction — what does the OS accept as input, and how does it map to actions
-- [ ] Build an agent daemon on top of an existing Linux base (not a new kernel)
-- [ ] Permission/sandbox model for agents acting on the user's behalf
-- [ ] A minimal shell/UI for intent-driven interaction
-- [ ] Local-first inference (no forced cloud dependency)
+Not doing (yet): writing a kernel from scratch, multi-machine/distributed anything, mobile. Those might come later, but trying to do them now would mean never shipping anything.
 
-Explicitly **out of scope for now**: writing a new kernel, multi-machine distributed compute, mobile builds. These may become real goals later, but bundling them in now would make the project impossible to ship or evaluate.
-
-## Architecture (high level)
+## Rough architecture
 
 ```
 ┌─────────────────────────────┐
-│   Intent Layer (natural      │  ← user describes a goal
-│   language / structured)     │
+│  Intent layer                │  you describe a goal
 ├─────────────────────────────┤
-│   Agent Orchestrator         │  ← decides which tools/programs/
-│   (planning, permissions)    │    files are needed, in what order
+│  Agent orchestrator          │  decides what tools/programs/files
+│                               │  are needed, and in what order
 ├─────────────────────────────┤
-│   Existing Linux Kernel      │  ← process, memory, drivers,
-│   + standard subsystems      │    filesystem (unmodified, for now)
+│  Regular Linux kernel        │  process, memory, drivers, fs
+│  (untouched, for now)        │
 └─────────────────────────────┘
 ```
 
-As the project matures, lower layers may be reconsidered — but the agent orchestrator is the first thing being built, since it's the actual novel contribution.
+The orchestrator is the actual new part. Everything below it is deliberately boring and unmodified until the idea above it is proven out.
 
-## Non-Goals
+## What this isn't
 
-- Not a general-purpose chatbot wrapper
-- Not a replacement for Linux/Windows/macOS in the near term
-- Not claiming kernel-level innovation at this stage
+- Not a new kernel, not claiming to be
+- Not distributed / multi-device — single machine only for now
+- Not just an LLM wrapper with extra steps
+
+Saying this upfront on purpose — "AI OS" projects tend to promise everything and deliver a demo. Better to be honest about scope than to oversell it.
 
 ## Status
 
-Early / pre-alpha. README and architecture sketch stage. Code not yet public.
+Pre-alpha. Right now this repo is just the idea and the design sketch — no code published yet.
 
 ## Contributing
 
-Not open for contributions yet — design is still being pinned down. Watch this space, or open an issue with ideas/critique.
+Not really open for contributions yet since the design itself is still moving around. If you've got thoughts, prior art, or want to poke holes in the idea, open an issue — that's genuinely useful right now.
 
 ## License
 
-MIT License
+MIT — see [LICENSE](./LICENSE).
