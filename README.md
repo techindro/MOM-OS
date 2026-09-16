@@ -36,14 +36,13 @@
 # MOM-OS
 ### Mind-Oriented Machine Operating System
 
-![Status](https://img.shields.io/badge/status-pre--alpha-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![PRs](https://img.shields.io/badge/PRs-not%20yet%20open-red)
-![Kernel](https://img.shields.io/badge/kernel-Linux%206.8%20LTS-blue)
-![Mom.OS](https://img.shields.io/badge/Mom.OS-v1.0.0-9cf)
-![Platform](https://img.shields.io/badge/platform-Linux-orange)
-![AI](https://img.shields.io/badge/AI-powered-purple)
+![Kernel](https://img.shields.io/badge/kernel-6.8%20LTS-blue)
+![Linux](https://img.shields.io/badge/Linux-supported-orange)
 ![Windows](https://img.shields.io/badge/Windows-compatible-0078d4)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-tested-E95420)
+![AI](https://img.shields.io/badge/AI-powered-purple)
+![Mom.OS](https://img.shields.io/badge/Mom.OS-v1.0.0-9cf)
 
 </div>
 
