@@ -22,15 +22,15 @@
   <path d="M48 49 Q50 54 52 49" stroke="#c09080" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   <path d="M26 82 Q30 68 50 66 Q70 68 74 82 L80 100 L20 100 Z" fill="#8b1a1a" />
   <path d="M36 68 Q50 75 64 68" stroke="#d4a017" stroke-width="1" fill="none"/>
-  <circle cx="35.42" cy="59.72" r="2.2" fill="#d4a017" />
-  <circle cx="38.30" cy="58.30" r="2.2" fill="#d4a017" />
-  <circle cx="41.60" cy="57.36" r="2.2" fill="#d4a017" />
-  <circle cx="45.20" cy="56.98" r="2.2" fill="#d4a017" />
-  <circle cx="48.90" cy="57.19" r="2.2" fill="#d4a017" />
-  <circle cx="52.51" cy="57.98" r="2.2" fill="#d4a017" />
-  <circle cx="55.85" cy="59.31" r="2.2" fill="#d4a017" />
-  <circle cx="58.75" cy="61.15" r="2.2" fill="#d4a017" />
-  <circle cx="61.05" cy="63.43" r="2.2" fill="#d4a017" />
+  <circle cx="38.43" cy="72.64" r="2.2" fill="#d4a017" />
+  <circle cx="41.00" cy="71.94" r="2.2" fill="#d4a017" />
+  <circle cx="43.84" cy="71.42" r="2.2" fill="#d4a017" />
+  <circle cx="46.87" cy="71.11" r="2.2" fill="#d4a017" />
+  <circle cx="50.00" cy="71.00" r="2.2" fill="#d4a017" />
+  <circle cx="53.13" cy="71.11" r="2.2" fill="#d4a017" />
+  <circle cx="56.16" cy="71.42" r="2.2" fill="#d4a017" />
+  <circle cx="59.00" cy="71.94" r="2.2" fill="#d4a017" />
+  <circle cx="61.57" cy="72.64" r="2.2" fill="#d4a017" />
 </svg>
 
 # MOM-OS
