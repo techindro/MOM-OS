@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/logo.png" width="110" height="110" alt="MOM-OS logo" />
+<img src="https://raw.githubusercontent.com/techindro/MOM-OS/main/logo.png" width="110" height="110" alt="MOM-OS logo" />
 
 # MOM-OS
 ### Mind-Oriented Machine Operating System
